@@ -10,6 +10,7 @@ import { MdOutlinePendingActions } from "react-icons/md";
 import { GrCompliance } from "react-icons/gr";
 import { IoMdLogOut } from "react-icons/io";
 import { MdOutlineManageAccounts } from "react-icons/md";
+
 const SideBar = () => {
   return (
     <div className=
@@ -18,39 +19,39 @@ const SideBar = () => {
       <img src={logo} alt="easy Dairy logo" className='h-32 py-4 m-auto ' />
       </div>
     <ul className='flex flex-col mt-3 text-xl'>
-        <NavLink className="flex items-center py-3 space-x-4 hover:rounded hover:cursor-pointer hover:bg-blue-600 hover:text-white">
+        <NavLink className="flex items-center py-[10px] space-x-4 hover:rounded hover:cursor-pointer hover:bg-blue-600 hover:text-white">
             <FaTachometerAlt></FaTachometerAlt>
             <span className='hidden md:inline '>Dashboard</span>
         </NavLink>
-        <NavLink className="flex items-center py-3 space-x-4 hover:rounded hover:cursor-pointer hover:bg-blue-600 hover:text-white">
+        <NavLink className="flex items-center py-[10px] space-x-4 hover:rounded hover:cursor-pointer hover:bg-blue-600 hover:text-white">
             <IoIosNotifications ></IoIosNotifications>
             <span className='hidden md:inline '>Notification</span>
         </NavLink>
-        <NavLink className="flex items-center py-3 space-x-4 hover:rounded hover:cursor-pointer hover:bg-blue-600 hover:text-white">
+        <NavLink className="flex items-center py-[10px] space-x-4 hover:rounded hover:cursor-pointer hover:bg-blue-600 hover:text-white">
             <FaHistory></FaHistory>
             <span className='hidden md:inline '>History</span>
         </NavLink>
-        <NavLink className="flex items-center py-3 space-x-4 hover:rounded hover:cursor-pointer hover:bg-blue-600 hover:text-white">
+        <NavLink className="flex items-center py-[10px] space-x-4 hover:rounded hover:cursor-pointer hover:bg-blue-600 hover:text-white">
         <IoIosSend />
-            <span className='hidden md:inline '>Sent</span>
+            <span className='hidden md:inline '><NavLink to={"/send"}>Sent</NavLink></span>
         </NavLink>
-        <NavLink className="flex items-center py-3 space-x-4 hover:rounded hover:cursor-pointer hover:bg-blue-600 hover:text-white">
+        <NavLink className="flex items-center py-[10px] space-x-4 hover:rounded hover:cursor-pointer hover:bg-blue-600 hover:text-white">
         <MdCallReceived />
-            <span className='hidden md:inline '>Received</span>
+            <span className='hidden md:inline '><NavLink to={"/received"}>Received</NavLink></span>
         </NavLink>
-        <NavLink className="flex items-center py-3 space-x-4 hover:rounded hover:cursor-pointer hover:bg-blue-600 hover:text-white">
+        <NavLink className="flex items-center py-[10px] space-x-4 hover:rounded hover:cursor-pointer hover:bg-blue-600 hover:text-white">
         <MdOutlinePendingActions />
-            <span className='hidden md:inline '>Pending</span>
+            <span className='hidden md:inline '><NavLink to={"/pending"}>Pending</NavLink></span>
         </NavLink>
-        <NavLink className="flex items-center py-3 space-x-4 hover:rounded hover:cursor-pointer hover:bg-blue-600 hover:text-white">
+        <NavLink className="flex items-center py-[10px] space-x-4 hover:rounded hover:cursor-pointer hover:bg-blue-600 hover:text-white">
         <GrCompliance />
             <span className='hidden md:inline '>Completed</span>
         </NavLink>
-        <NavLink className="flex items-center py-3 space-x-4 hover:rounded hover:cursor-pointer hover:bg-blue-600 hover:text-white">
+        <NavLink className="flex items-center py-[10px] space-x-4 hover:rounded hover:cursor-pointer hover:bg-blue-600 hover:text-white">
         <MdOutlineManageAccounts />
             <span className='hidden md:inline '>Account</span>
         </NavLink>
-        <NavLink className="flex items-center  py-3 space-x-4 hover:rounded hover:cursor-pointer hover:bg-blue-600 hover:text-white">
+        <NavLink className="flex items-center  py-[10px] space-x-4 hover:rounded hover:cursor-pointer hover:bg-blue-600 hover:text-white">
         <IoMdLogOut />
             <span className='hidden md:inline '>Logout</span>
         </NavLink>
