@@ -6,7 +6,9 @@ const Compress = () => {
     <Navbar></Navbar>
    <div className='ml-16 md:ml-64'>
       {/* You can open the modal using document.getElementById('ID').showModal() method */}
-<button className="btn" onClick={()=>document.getElementById('my_modal_3').showModal()}>open modal</button>
+<div className="items-center justify-center m-auto">
+<button className="btn " onClick={()=>document.getElementById('my_modal_3').showModal()}>Write your letter</button>
+</div>
 <dialog id="my_modal_3" className="modal">
   <div className="modal-box">
     <form method="dialog">

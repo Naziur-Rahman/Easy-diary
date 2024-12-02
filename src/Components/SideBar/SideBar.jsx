@@ -19,13 +19,14 @@ const SideBar = () => {
       <img src={logo} alt="easy Dairy logo" className='h-20 md:h-32 py-4 m-auto ' />
       </div>
     <ul className='flex flex-col mt-3 text-xl'>
-        <NavLink to={"compress"} className="flex items-center py-[10px] space-x-4 hover:rounded hover:cursor-pointer hover:bg-blue-600 hover:text-white">
-        <FaPen />
-            <span className='hidden md:inline '>Compress</span>
-        </NavLink>
+        
         <NavLink className="flex items-center py-[10px] space-x-4 hover:rounded hover:cursor-pointer hover:bg-blue-600 hover:text-white">
             <FaTachometerAlt></FaTachometerAlt>
             <span className='hidden md:inline '>Dashboard</span>
+        </NavLink>
+        <NavLink to={"compress"} className="flex items-center py-[10px] space-x-4 hover:rounded hover:cursor-pointer hover:bg-blue-600 hover:text-white">
+        <FaPen />
+            <span className='hidden md:inline '>Compress</span>
         </NavLink>
         <NavLink className="flex items-center py-[10px] space-x-4 hover:rounded hover:cursor-pointer hover:bg-blue-600 hover:text-white">
             <IoIosNotifications ></IoIosNotifications>
