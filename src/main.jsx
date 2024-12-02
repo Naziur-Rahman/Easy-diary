@@ -8,6 +8,9 @@ import Dashboard from './Components/Home/Dashboard';
 import Send from './Components/Send/Send';
 import Received from './Components/Received/Received';
 import Pending from './Components/Pending/Pending';
+import Completed from './Components/Completed/Completed';
+import Compress from './Components/Compress/Compress';
+import History from './Components/History/History';
 const router = createBrowserRouter([
   {
     path: "/",element: <Layout></Layout>,
@@ -24,6 +27,15 @@ const router = createBrowserRouter([
       },
       {
         path: "/pending",element: <Pending></Pending>,
+      },
+      {
+        path: "/completed",element: <Completed></Completed>,
+      },
+      {
+        path: "/compress",element: <Compress></Compress>,
+      },
+      {
+        path: "/history",element: <History></History>,
       },
     ],
   },

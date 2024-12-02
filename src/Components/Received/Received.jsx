@@ -1,10 +1,15 @@
-import React from 'react'
 
+import Navbar from '../SideBar/Navbar'
 const Received = () => {
   return (
-    <div>
-      <h1>Welcome to received page see your received file </h1>
-    </div>
+    <>
+      <div className='ml-16 md:ml-64'>
+        <Navbar></Navbar>
+        <div className='ml-16 md:ml-64'>
+          <h1>welcome to received pave</h1>
+        </div>
+      </div>
+    </>
   )
 }
 

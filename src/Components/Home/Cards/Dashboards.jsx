@@ -1,4 +1,4 @@
-import React from 'react'
+
 import Cards from './Cards'
 import { IoIosSend } from "react-icons/io";
 import { MdCallReceived } from "react-icons/md";
