@@ -11,6 +11,8 @@ import Pending from './Components/Pending/Pending';
 import Completed from './Components/Completed/Completed';
 import Compress from './Components/Compress/Compress';
 import History from './Components/History/History';
+
+
 const router = createBrowserRouter([
   {
     path: "/",element: <Layout></Layout>,
