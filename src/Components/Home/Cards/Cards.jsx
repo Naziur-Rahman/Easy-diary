@@ -1,16 +1,23 @@
-import React from 'react'
-
-const Cards = ({icon, title, value}) => {
+// Updated Cards component
+const Cards = ({ icon, title, value, description, trend, trendPositive, bgColor }) => {
   return (
-    <div className='bg-white text-dark p-4 rounded-lg shadow-md flex items-center space-x-6
-    dark:bg-gray-800 dark:text-white'>
-        <div className='text-3xl text-gray-500'>{icon}</div>
-        <div>
-            <h2 className='text-lg font-semibold'>{title}</h2>
-            <p className='text-xl'>{value}</p>
+    <div className={`${bgColor || 'bg-white'} rounded-xl shadow-sm p-6 hover:shadow-md transition-shadow`}>
+      <div className="flex items-center justify-between mb-4">
+        <div className="p-3 bg-white rounded-lg shadow-sm">
+          {icon}
         </div>
+        <div className={`text-sm font-medium ${trendPositive ? 'text-green-500' : 'text-red-500'}`}>
+          {trend}
+        </div>
+      </div>
+      
+      <h3 className="text-2xl font-bold text-gray-800 mb-2">{value}</h3>
+      <p className="text-gray-600 font-medium">{title}</p>
+      {description && (
+        <p className="text-sm text-gray-500 mt-1">{description}</p>
+      )}
     </div>
-  )
-}
+  );
+};
 
-export default Cards
+export default Cards;
