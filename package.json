@@ -1,6 +1,6 @@
 {
   "name": "easy-diary",
-   "homepage": "https://yourusername.github.io/easy-diary",
+   "homepage": "https://naziur-rahman.github.io/Easy-diary/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -11,7 +11,7 @@
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "build": "react-scripts build"
+    
   },
   "dependencies": {
     "chart.js": "^4.4.6",
